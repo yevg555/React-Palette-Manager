@@ -1,3 +1,5 @@
+import sizes from "./sizes";
+
 export default {
     Palette: {
         height: "100vh",
@@ -5,10 +7,12 @@ export default {
         flexDirection: "column"
     },
     colors: {
-        height: "90%"
+        height: "90%",
+        display: 'flex',
+        flexWrap: 'wrap',
     },
     goBack: {
-        width: "20%",
+        width: 100 / 6 + "%",
         height: "50%",
         margin: "0 auto",
         display: "inline-block",
@@ -17,6 +21,22 @@ export default {
         marginBottom: "-3.5px",
         opacity: 1,
         backgroundColor: "white",
+        [sizes.down('lg')]: {
+            width: 100 / 4 + '%',
+            height: 100 / 3 + '%'
+        },
+        [sizes.down('md')]: {
+            width: 100 / 3 + '%',
+            height: 100 / 4 + '%'
+        },
+        [sizes.down('csm')]: {
+            width: 100 / 2 + '%',
+            height: 100 / 6 + '%'
+        },
+        [sizes.down('xs')]: {
+            width: '100%',
+            height: 100 / 12 + '%'
+        },
         "& a": {
             color: "rgba(41,47,49,0.9)",
             width: "100px",
@@ -36,6 +56,6 @@ export default {
             fontWeight: 900,
             border: "none",
             textDecoration: "none"
-        }
+        },
     }
 };
