@@ -29,7 +29,7 @@ export default {
 
         },
         [sizes.down("ccm")]: {
-            display: (props) => (props.showingFullPalette ? "none" : "flex")
+            display: props => (props.showingFullPalette ? "none" : "flex")
         },
         [sizes.down("xxs")]: {
             display: () => "none"
