@@ -43,7 +43,8 @@ function SingleColorPalette(props) {
                 showingAllColors={false}
                 format={format}
             />
-            <div className={classes.colors}>{colorBoxes}
+            <div className={classes.colors}>
+                {colorBoxes}
                 <div className={classes.goBack}>
                     <Link to={`/palette/${id}`} >GO BACK</Link>
                 </div>

@@ -79,6 +79,11 @@ export default {
                 display: 'block',
                 fontSize: '.8rem'
             }
+        },
+        "& span": {
+            [sizes.down("sm")]: {
+                display: "none"
+            }
         }
     },
     hideable: {

@@ -7,6 +7,9 @@ export default {
         justifyContent: 'flex-start',
         height: '6vh',
         fontWeight: 550,
+        [sizes.down("ccm")]: {
+            paddingLeft: ".3rem"
+        }
 
     },
     logo: {
@@ -25,8 +28,11 @@ export default {
             fontFamily: 'Arial',
 
         },
-        [sizes.down("xs")]: {
-            display: "none"
+        [sizes.down("ccm")]: {
+            display: props => (props.showingFullPalette ? "none" : "flex")
+        },
+        [sizes.down("xxs")]: {
+            display: () => "none"
         }
     },
     slider: {

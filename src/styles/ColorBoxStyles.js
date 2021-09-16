@@ -3,28 +3,46 @@ import sizes from "./sizes";
 
 const styles = {
     ColorBox: {
-        width: "20%",
+        width: props => (props.showingFullPalette ? "20%" : 100 / 6 + "%"),
         height: props => (props.showingFullPalette ? "25%" : "50%"),
         margin: "0 auto",
         display: "inline-block",
         position: "relative",
         cursor: "pointer",
         marginBottom: "-3.5px",
+        [sizes.down('lg')]: {
+            width: (props) => (props.showingFullPalette ? '25%' : 100 / 4 + "%"),
+            height: (props) => (props.showingFullPalette ? '20%' : 100 / 3 + "%")
+        },
+        [sizes.down('md')]: {
+            width: (props) => (props.showingFullPalette ? '50%' : 100 / 3 + "%"),
+            height: (props) => (props.showingFullPalette ? '10%' : 100 / 4 + "%")
+        },
+        [sizes.down('csm')]: {
+            width: () => 100 / 2 + '%',
+            height: (props) => (props.showingFullPalette ? '10%' : 100 / 6 + "%")
+        },
+        [sizes.down('xs')]: {
+            width: () => '100%',
+            height: (props) => (props.showingFullPalette ? '5%' : 100 / 12 + "%")
+        },
         "&:hover button": {
             opacity: 1
         },
-        [sizes.down("lg")]: {
-            width: "25%",
-            height: props => (props.showingFullPalette ? "20%" : "33.333%")
-        },
-        [sizes.down("md")]: {
-            width: "50%",
-            height: props => (props.showingFullPalette ? "10%" : "20%")
-        },
-        [sizes.down("xs")]: {
-            width: "100%",
-            height: props => (props.showingFullPalette ? "5%" : "10%")
-        }
+
+        ///////////////////////////////////////////////////
+        // [sizes.down("lg")]: {
+        //     width: "25%",
+        //     height: props => (props.showingFullPalette ? "20%" : "33.333%")
+        // },
+        // [sizes.down("md")]: {
+        //     width: "50%",
+        //     height: props => (props.showingFullPalette ? "10%" : "20%")
+        // },
+        // [sizes.down("xs")]: {
+        //     width: "100%",
+        //     height: props => (props.showingFullPalette ? "5%" : "10%")
+        // }
     },
     copyText: {
         color: props =>
