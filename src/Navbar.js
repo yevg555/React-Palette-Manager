@@ -23,7 +23,7 @@ function Navbar(props) {
     const closeSnackbar = () => {
         setIsOpen(false)
     }
-    const { level, changeLevel, showingAllColors, classes, format, handleChange } = props;
+    const { level, changeLevel, showingAllColors, classes, format, handleChange, showingFullPalette } = props;
 
     return (
         <header className={classes.Navbar}>

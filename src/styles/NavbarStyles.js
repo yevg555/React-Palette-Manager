@@ -29,7 +29,7 @@ export default {
 
         },
         [sizes.down("ccm")]: {
-            display: props => (props.showingFullPalette ? "none" : "flex")
+            display: (props) => (props.showingFullPalette ? "none" : "flex")
         },
         [sizes.down("xxs")]: {
             display: () => "none"
@@ -58,10 +58,7 @@ export default {
         [sizes.down("md")]: {
             width: "300px"
         },
-        [sizes.down("sm")]: {
-            width: "150px"
-        },
-        [sizes.down("xxs")]: {
+        [sizes.down("xs")]: {
             display: "none"
         }
     },

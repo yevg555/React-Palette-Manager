@@ -29,6 +29,7 @@ function Palette(props) {
                 handleChange={changeFormat}
                 showingAllColors
                 format={format}
+                showingFullPalette
             />
             <div className={classes.colors}>{colorBoxes}</div>
             <PaletteFooter paletteName={paletteName} emoji={emoji} />
