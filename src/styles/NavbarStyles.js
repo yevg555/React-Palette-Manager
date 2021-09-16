@@ -6,6 +6,8 @@ export default {
         alignItems: 'center',
         justifyContent: 'flex-start',
         height: '6vh',
+        fontWeight: 550,
+
     },
     logo: {
         marginRight: 15,
@@ -17,8 +19,8 @@ export default {
         display: 'flex',
         alignItems: 'center',
         "& a": {
+            color: '#040a0ac7',
             textDecoration: 'none',
-            color: 'black',
             letterSpacing: '.1rem',
             fontFamily: 'Arial',
 
@@ -61,5 +63,6 @@ export default {
     selectContainer: {
         marginLeft: 'auto',
         marginRight: '1rem',
+
     }
 };
