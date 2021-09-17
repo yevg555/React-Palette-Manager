@@ -1,3 +1,5 @@
+import sizes from "./sizes";
+
 export default {
     root: {
         margin: 0,
@@ -6,8 +8,8 @@ export default {
         MozOsxFontSmoothing: 'grayscale',
         backgroundColor: "white",
         border: "1px solid black",
-        borderRadius: "5px",
-        padding: "0.5rem",
+        borderRadius: "3px",
+        padding: "0.42rem",
         position: "relative",
         overflow: "hidden",
         cursor: "pointer",
@@ -30,9 +32,17 @@ export default {
         margin: "0",
         color: "black",
         paddingTop: '0.5rem',
-        paddingBottom: '1rem',
-        fontSize: "1rem",
-        position: "relative"
+        paddingBottom: '0.6rem',
+        fontSize: ".88rem",
+        position: "relative",
+        [sizes.down('md')]: {
+            paddingTop: '0.3rem',
+            paddingBottom: '1.2rem',
+        },
+        [sizes.down('sm')]: {
+            paddingTop: '0.5rem',
+            paddingBottom: '0.2rem',
+        }
     },
     emoji: {
         marginLeft: "0.5rem",

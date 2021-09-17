@@ -56,7 +56,7 @@ export default [
   {
     paletteName: "Flat UI Colors Dutch",
     id: "flat-ui-colors-dutch",
-    emoji: "😁🇱",
+    emoji: "😁",
     colors: [
       { name: "Sunflower", color: "#FFC312" },
       { name: "Energos", color: "#C4E538" },
@@ -164,7 +164,7 @@ export default [
   {
     paletteName: "Flat UI Colors Spanish",
     id: "flat-ui-colors-spanish",
-    emoji: "🌮🇸",
+    emoji: "🌮",
     colors: [
       { name: "JacksonsPurple", color: "#40407a" },
       { name: "C64Purple", color: "#706fd3" },

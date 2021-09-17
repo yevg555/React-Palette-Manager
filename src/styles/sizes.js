@@ -8,6 +8,7 @@ const sizes = {
     xxl: "1600px",
     ccm: "797px", // custom size for PaletteList
     csm: "647px", // custom size for PaletteList
+    cssm: "670px", // custom size for PaletteList
 };
 
 export default {
