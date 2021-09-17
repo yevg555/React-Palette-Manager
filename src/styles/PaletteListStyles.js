@@ -15,7 +15,6 @@ export default {
         backgroundColor: "blue",
         height: "100vh",
         width: '100vw',
-        display: "flex",
         backgroundColor: "#394bad",
         backgroundImage: `url(${bg})`,
         overflow: "auto",

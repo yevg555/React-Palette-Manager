@@ -44,7 +44,14 @@ function PaletteMetaForm(props) {
                 <DialogTitle id='form-dialog-title'>
                     Choose a Palette Emoji
                 </DialogTitle>
-                <Picker title='Pick a Palette Emoji' onSelect={savePalette} />
+                <Picker title='Pick a Palette Emoji'
+                    set="google"
+                    showSkinTones={false}
+                    showPreview={false}
+                    emojiSize={30}
+                    emojiTooltip={true}
+                    exclude={['recent']}
+                    onSelect={savePalette} />
             </Dialog>
             <Dialog
                 open={stage === "form"}
