@@ -9,7 +9,7 @@ import { formatContext } from './contexts/formatContext'
 
 
 function SingleColorPalette(props) {
-    const [format, setFormat, changeFormat] = useContext(formatContext)
+    const [format, changeFormat] = useContext(formatContext)
 
     const { palette, colorId, classes } = props
     const { paletteName, id } = props.palette;

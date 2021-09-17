@@ -8,7 +8,7 @@ import SingleColorPalette from "./SingleColorPalette";
 import { generatePalette } from './colorHelpers';
 import { Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { FormatProvider, formatContext } from './contexts/formatContext'
+import { FormatProvider } from './contexts/formatContext'
 
 export default function App(props) {
   const { palettes, findPalette, deletePalette, savePalette, resetList } = useAppState()

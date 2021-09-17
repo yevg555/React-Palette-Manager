@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-export default {
+const MiniPaletteStyles = {
     root: {
         margin: 0,
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -69,3 +69,4 @@ export default {
         opacity: 0
     }
 };
+export default MiniPaletteStyles;

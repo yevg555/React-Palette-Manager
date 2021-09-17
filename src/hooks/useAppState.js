@@ -1,7 +1,7 @@
 import { useLocalStorageState } from "./useLocalStorageState";
 import seedColors from '../seedColors';
 // import uuid from "uuid/v4";
-export default () => {
+const useAppState = () => {
     const [palettes, setPalettes] = useLocalStorageState("palettes", seedColors);
     return {
         palettes,
@@ -27,3 +27,5 @@ export default () => {
 
     };
 };
+
+export default useAppState;

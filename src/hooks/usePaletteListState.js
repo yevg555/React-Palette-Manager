@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useToggle from './useToggleState'
 
-export default (props) => {
+const usePaletteListState = (props) => {
     const [isOpenDeleteDialog, toggleIsOpenDeleteDialog] = useToggle(false)
     const [isOpenResetDialog, toggleIsOpenResetDialog] = useToggle(false)
     const [deletingId, setDeletingId] = useState("")
@@ -35,4 +35,4 @@ export default (props) => {
     }
 };
 
-
+export default usePaletteListState;

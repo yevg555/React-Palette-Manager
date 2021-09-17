@@ -14,7 +14,6 @@ import "emoji-mart/css/emoji-mart.css";
 function PaletteMetaForm(props) {
     const [stage, setStage] = useState("form")
     const [newPaletteName, setNewPaletteName] = useState("")
-    const [isOpen, setIsOpen] = useState("")
     const { hideForm, handleSubmit, palettes } = props;
 
     useEffect(() => {

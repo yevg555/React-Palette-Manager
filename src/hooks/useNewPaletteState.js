@@ -2,10 +2,13 @@ import { useState } from "react";
 import seedColors from '../seedColors'
 import { arrayMoveImmutable } from 'array-move';
 
-export default (props) => {
+
+const useNewPaletteState = (props) => {
+
     const { history, palettes, savePalette } = props
     const [isOpen, setIsOpen] = useState(true)
     const [colors, setColors] = useState(seedColors[0].colors)
+
     return {
         isOpen, colors,
         handleDrawerOpen: () => {
@@ -51,3 +54,5 @@ export default (props) => {
         },
     };
 };
+
+export default useNewPaletteState;
