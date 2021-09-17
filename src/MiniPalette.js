@@ -13,7 +13,7 @@ const MiniPalette = React.memo((props) => {
     const handleClick = () => {
         goToPalette(id);
     }
-    console.log("RENDERING: ", paletteName);
+
     const miniColorBoxes = colors.map(color => (
         <div
             className={classes.miniColor}
