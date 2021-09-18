@@ -1,4 +1,4 @@
-export default {
+const PaletteFooterStyles = {
     PaletteFooter: {
         backgroundColor: "white",
         height: "5vh",
@@ -9,3 +9,4 @@ export default {
         marginRight: "0.5rem",
     }
 }
+export default PaletteFooterStyles;

@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-export default {
+const NavBarStyles = {
     Navbar: {
         display: 'flex',
         alignItems: 'center',
@@ -69,3 +69,5 @@ export default {
 
     }
 };
+
+export default NavBarStyles;

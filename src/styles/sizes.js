@@ -11,7 +11,7 @@ const sizes = {
     cssm: "670px", // custom size for PaletteList
 };
 
-export default {
+const sizeFunc = {
     up(size) {
         return `@media (min-width: ${sizes[size]})`;
     },
@@ -19,3 +19,5 @@ export default {
         return `@media (max-width: ${sizes[size]})`;
     }
 };
+
+export default sizeFunc;

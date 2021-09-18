@@ -1,7 +1,7 @@
 import sizes from "./sizes";
 import bg from "./bg.svg";
 
-export default {
+const PaletteListStyles = {
     "@global": {
         ".fade-exit": {
             opacity: 1
@@ -12,7 +12,6 @@ export default {
         }
     },
     root: {
-        backgroundColor: "blue",
         height: "100vh",
         width: '100vw',
         backgroundColor: "#394bad",
@@ -109,3 +108,5 @@ export default {
 
     }
 };
+
+export default PaletteListStyles;

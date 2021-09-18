@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-export default {
+const SingleColorPaletteStyles = {
     Palette: {
         height: "100vh",
         display: "flex",
@@ -59,3 +59,5 @@ export default {
         },
     }
 };
+
+export default SingleColorPaletteStyles
